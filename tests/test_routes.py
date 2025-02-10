@@ -130,7 +130,7 @@ class TestAccountService(TestCase):
         self.assertEqual(resp.status_code, status.HTTP_404_NOT_FOUND)
 
 ######################################################################
-    #  TEST READ AN ACCOUNT(SELF)
+    #  TEST READ AN ACCOUNT(SELF) 
     ######################################################################
 
     def test_get_account(self):
@@ -142,3 +142,4 @@ class TestAccountService(TestCase):
         self.assertEqual(resp.status_code, status.HTTP_200_OK)
         data = resp.get_json()
         self.assertEqual(data["name"], account.name)    
+
