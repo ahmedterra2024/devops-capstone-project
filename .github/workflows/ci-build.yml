@@ -1,0 +1,9 @@
+
+name: ci-build.yaml
+on:
+  push:
+    branches:
+      - add-ci-build
+  pull_request:
+    branches:
+      - add-ci-build
