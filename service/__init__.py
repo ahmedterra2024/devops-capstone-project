@@ -41,3 +41,9 @@ from flask_talisman import Talisman
 
 # Create an instance of Talisman
 talisman = Talisman(app)
+
+# Import the CORS class from flask_cors
+from flask_cors import CORS
+
+#Create CORS class
+CORS(app)
